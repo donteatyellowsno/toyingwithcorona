@@ -34,7 +34,7 @@ def symptom(meet,rate,going):
         #encountering healthy people approximately
         if n>timeearl+len(y):
             meet=1#danish government reacted by not testing anymore and keeping most people home
-            #rate=0.01#people practice more caution touching face hugs handwash
+            #rate=0.01#comment out if somethin makes the desease less infectionate
         meethealthy=random.binomial(meet*int(sum(cont)),health/(health+sum(contagestage)+sum(cont)+sum(imune)))
         if meethealthy>health:
             meethealthy=health
